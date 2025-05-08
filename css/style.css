@@ -1,17 +1,22 @@
 .navbar {
-  background-color: transparent !important; 
+  background-color: transparent !important;
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(64, 123, 255, 0.95) !important; /* azul translúcido */
 }
 
 .navbar-nav .nav-link {
-  color: #ffffff !important;    
-  margin: 0 15px;              
+  color: #ffffff !important;
+  margin: 0 15px;
   font-weight: 500;
 }
 
 .navbar-nav .nav-link:focus,
 .navbar-nav .nav-link:active,
 .navbar-nav .nav-link.active {
-color: #0d6efd !important;     
+  color: #0d6efd !important;
 }
 
 header {
@@ -61,8 +66,7 @@ header .header-btn:hover {
   color: #ffffff;
 }
 
-.barra-azul {
-  width: 100%;
-  height: 6px;
-  background-color: #052F8D;
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  transition: background-color 0.3s ease-in-out;
 }

@@ -15,6 +15,18 @@
   >
   <title>SalusCore</title>
 </head>
+
+<script>
+  window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+</script>
+
 <body>
 
   <script
@@ -76,6 +88,80 @@
       </div>
     </div>
   </section>
+
+  <section class="desenvolvedores py-5 bg-light">
+    <div class="container text-center">
+      <p class="text-primary fw-bold mb-1" style="color: #407BFF;">SUA MELHOR ESCOLHA!</p>
+      <h2 class="fw-bold mb-4">Desenvolvedores</h2>
+  
+      <div class="row g-4 justify-content-center">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="imgs/devs_img1.png" class="card-img-top" alt="Arthur Albino">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Arthur Albino</h5>
+              <p class="card-text text-muted">Lorem Ipsum is simply dummy text of the printing.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+              <span class="badge bg-primary">REDATOR</span>
+              <span class="badge bg-secondary">DEV - SQL</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Card 2 (exemplo, modifique conforme necessário) -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="imgs/devs_img1.png" class="card-img-top" alt="Endrew Rodrigues">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Endrew Rodrigues</h5>
+              <p class="card-text text-muted">Lorem Ipsum is simply dummy text of the printing.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+              <span class="badge bg-primary">FRONT-END</span>
+              <span class="badge bg-secondary">ANALISTA IA</span>
+            </div>
+          </div>
+        </div>
+
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow">
+              <img src="imgs/devs_img1.png" class="card-img-top" alt="Arthur Albino">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Arthur Albino</h5>
+                <p class="card-text text-muted">Lorem Ipsum is simply dummy text of the printing.</p>
+              </div>
+              <div class="card-footer d-flex justify-content-between">
+                <span class="badge bg-primary">REDATOR</span>
+                <span class="badge bg-secondary">DEV - SQL</span>
+              </div>
+            </div>
+          </div>
+
+            <!-- Card 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="imgs/devs_img1.png" class="card-img-top" alt="Arthur Albino">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Arthur Albino</h5>
+              <p class="card-text text-muted">Lorem Ipsum is simply dummy text of the printing.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+              <span class="badge bg-primary">REDATOR</span>
+              <span class="badge bg-secondary">DEV - SQL</span>
+            </div>
+          </div>
+        </div>
+
+        
+  
+        <!-- Adicione mais cards aqui seguindo a mesma estrutura -->
+      </div>
+    </div>
+  </section>
+  
 
 </body>
 </html>
